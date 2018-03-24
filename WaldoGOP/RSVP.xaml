@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WaldoGOP.RSVP" Title="Event RSVP">
+	<ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Name"></Label>
+            <Entry x:Name="rsvpName" />
+            <Label Text="Number Attending" />
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Stepper x:Name="numberAttending" Minimum="1" Maximum="10" Increment="1" />
+                <Label x:Name="numberAttendingLabel" Text="1" />
+            </StackLayout>
+            <Label Text="Contact Phone" />
+            <Entry x:Name="contactPhone" />
+            <Label Text="Contact Email" />
+            <Entry x:Name="contactEmail" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnSendRsvp" FontAttributes="Bold" Text="Send RSVP" BackgroundColor="Green" TextColor="White" BorderColor="Green" HorizontalOptions="FillAndExpand" Margin="10" />
+                <Button x:Name="btnCancel" FontAttributes="Bold" Text="Cancel" BackgroundColor="Red" BorderColor="Red" TextColor="White" HorizontalOptions="FillAndExpand" Margin="10" />
+            </StackLayout>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

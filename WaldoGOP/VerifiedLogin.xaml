@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="WaldoGOP.VerifiedLogin">
+	<ContentPage.Content>
+        <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Margin="10">
+            <Label x:Name="alreadyLoggedIn" />
+            <Label Text="User Name" />
+            <Entry x:Name="login" />
+            <Label Text="Password" />
+            <Entry x:Name="password" IsPassword="true" />
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btnLogin" BorderColor="Green" BackgroundColor="Green" TextColor="White" Text="Login" FontAttributes="Bold" HorizontalOptions="FillAndExpand" />
+                <Button x:Name="btnCancel" BorderColor="Red" BackgroundColor="Red" TextColor="White" Text="Cancel" FontAttributes="Bold" HorizontalOptions="FillAndExpand" />
+            </StackLayout>
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

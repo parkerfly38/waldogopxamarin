@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:icons="clr-namespace:FormsPlugin.Iconize;assembly=FormsPlugin.Iconize"
+                    x:Class="WaldoGOP.Home">
+    <Grid VerticalOptions="FillAndExpand" Margin="0,50" HorizontalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*" />
+            <ColumnDefinition Width="50*" />
+        </Grid.ColumnDefinitions>
+        <StackLayout x:Name="eventStack" Orientation="Vertical" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0">
+            <icons:IconImage Icon="fa-calendar" IconColor="Gray" BackgroundColor="White" WidthRequest="80" HeightRequest="80" />
+            <Label Text="Events" HorizontalOptions="Center" FontSize="11" />
+        </StackLayout>
+        <StackLayout x:Name="walkListStack" Orientation="Vertical" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1">
+            <icons:IconImage Icon="fa-street-view" IconColor="Gray" BackgroundColor="White" WidthRequest="80" HeightRequest="80" />
+            <Label Text="Walk Lists" HorizontalOptions="Center" FontSize="11" />
+        </StackLayout>
+        <StackLayout x:Name="contactToolStack" Orientation="Vertical" Grid.Row="1" Grid.Column="0">
+            <icons:IconImage Icon="fa-phone" IconColor="Gray" BackgroundColor="White" WidthRequest="80" HeightRequest="80" />
+            <Label Text="Contact Tools" HorizontalOptions="Center" FontSize="11" />
+        </StackLayout>
+        <StackLayout x:Name="ourCandidatesStack" Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+            <icons:IconImage Icon="fa-users" IconColor="Gray" BackgroundColor="White" WidthRequest="80" HeightRequest="80" />
+            <Label Text="Meet our Candidates" HorizontalOptions="Center" FontSize="11" />
+        </StackLayout>
+        <StackLayout x:Name="loginStack" Orientation="Vertical" Grid.Row="2" Grid.Column="0">
+            <icons:IconImage Icon="fa-sign-in" IconColor="Gray" BackgroundColor="White" WidthRequest="80" HeightRequest="80" />
+            <Label x:Name="lblAccount" Text="Login With Verified Account" HorizontalOptions="Center" FontSize="10" />
+        </StackLayout>
+        <StackLayout x:Name="donationStack" Orientation="Vertical" Grid.Row="2" Grid.Column="1">
+            <icons:IconImage Icon="fa-dollar" IconColor="Gray" BackgroundColor="White" WidthRequest="80" HeightRequest="80" />
+            <Label Text="Take a Donation" FontSize="11" HorizontalOptions="Center" />
+        </StackLayout>
+    </Grid>
+</ContentPage>
